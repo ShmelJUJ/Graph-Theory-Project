@@ -76,14 +76,3 @@ class Graph:
 				total += flow
 
 		return total
-
-f = open("MaxFlow-tests/test_6.txt")
-n, m = f.readline().split(" ")
-n = int(n)
-m = int(m)
-g = Graph(n)
-for i in range(m):
-	buf = list(map(int, f.readline().split(" ")))
-	g.addEdge(buf[0]-1, buf[1]-1, buf[2])
-
-print("Maximum flow", g.DinicMaxflow(0, n-1))
