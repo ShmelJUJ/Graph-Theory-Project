@@ -28,5 +28,5 @@ def test(path):
     max_flow_our = g.DinicMaxflow(0, n-1)
     end = timer()
     max_flow_nx = nx.maximum_flow_value(G, 0, n-1, capacity="weight")
-    print(f'{path},  time: {end - start}, N = {n}, M = {n}, maxflow = {max_flow_our}, maxflow_nx = {max_flow_nx}')
+    print(f'{path},  time: {end - start}, N = {n}, M = {m}, maxflow = {max_flow_our}, maxflow_nx = {max_flow_nx}')
     assert max_flow_our == max_flow_nx
