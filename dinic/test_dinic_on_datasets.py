@@ -1,4 +1,4 @@
-import DinicAlg as da
+import dinic_algo as da
 import networkx as nx
 import pytest as pt
 from timeit import default_timer as timer
